@@ -1,0 +1,47 @@
+{
+    "name": "react-admin",
+    "private": true,
+    "scripts": {
+        "dev": "next dev --turbo",
+        "build": "next build",
+        "start": "cp -r .next/static/ .next/standalone/.next/.; node .next/standalone/server.js",
+        "lint": "next lint"
+    },
+    "dependencies": {
+        "@emotion/cache": "^11.11.0",
+        "@emotion/react": "^11.11.1",
+        "@emotion/styled": "^11.11.0",
+        "@hookform/resolvers": "^2.9.11",
+        "@mui/icons-material": "^5.14.1",
+        "@mui/lab": "^5.0.0-alpha.70",
+        "@mui/material": "^5.14.2",
+        "@mui/material-nextjs": "^5.15.7",
+        "@mui/styles": "^5.9.2",
+        "@mui/x-data-grid": "^5.12.0",
+        "@mui/x-date-pickers": "^6.18.5",
+        "browserslist": "^4.20.3",
+        "dompurify": "^2.3.6",
+        "next": "14.1.0",
+        "prop-types": "^15.8.1",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0",
+        "react-hook-form": "^7.30.0",
+        "recharts": "^2.15.1",
+        "yup": "^0.32.11"
+    },
+    "devDependencies": {
+        "eslint": "<8.0.0",
+        "eslint-config-next": "^14.0.4"
+    },
+    "browserslist": [
+        "defaults"
+    ],
+    "browser": {
+        "fs": false,
+        "path": false,
+        "os": false
+    },
+    "resolutions": {
+        "jackspeak": "2.1.1"
+    }
+}

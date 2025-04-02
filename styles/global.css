@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;900&family=Poppins:wght@200;400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+body::-webkit-scrollbar {
+    width: 10px;
+    /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+    background: rgb(214, 214, 214);
+    /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(76, 76, 76);
+    /* color of the scroll thumb */
+    border-radius: 20px;
+    /* roundness of the scroll thumb */
+    border: 1px solid rgb(121, 121, 121);
+    /* creates padding around scroll thumb */
+}
+
+/* CSS do componente EditorTexto */
+
+.editor-class {
+    background-color: #fafafa;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    min-height: 300px;
+    max-height: 300px;
+}
+
+/* remove */
+.roudedImage {
+    border-radius: 50%;
+    cursor: pointer;
+    object-fit: cover;
+}
+
+.roundedImageNoPointer {
+    border-radius: 50%;
+}
+
+.modalInvertLeftImage {
+    transform: scaleX(-1);
+}
+
+.modalInvertRightImage {
+    transform: scaleX(1);
+}
+
+/* CSS extraido do GlobalStyles */
+html {
+    height: 100%;
+    width: 100%;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+}
+
+#root {
+    height: 100%;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}

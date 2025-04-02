@@ -1,0 +1,94 @@
+/* Custom AG Grid style to resemble MUI Material design with bold headers and no background */
+.ag-theme-alpine {
+    --ag-border-color: transparent;
+    /* Remove the outer border */
+    --ag-header-background-color: transparent;
+    /* Remove header background color */
+    --ag-header-height: 56px;
+    /* Material UI table header height */
+    --ag-font-size: 0.875rem;
+    --ag-font-family: 'Lato', sans-serif;
+    --ag-line-height: 1.43;
+    --ag-header-foreground-color: rgba(0, 0, 0, 0.87);
+    --ag-odd-row-background-color: #fafafa;
+    --ag-row-hover-color: rgba(0, 0, 0, 0.08);
+    --ag-selected-row-background-color: #e0f7fa;
+
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 1.43;
+    border: none;
+    /* Ensure no border around the grid */
+    box-shadow: none;
+    /* Remove any shadow effect */
+}
+
+.ag-theme-alpine .ag-root-wrapper {
+    border: none;
+    /* Remove outer border from the grid wrapper */
+}
+
+.ag-theme-alpine .ag-header {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+    /* Only header bottom border */
+    background-color: transparent;
+    /* Ensure no header background color */
+}
+
+.ag-theme-alpine .ag-header-cell {
+    font-weight: bold;
+    /* Bold text for header */
+    color: rgba(0, 0, 0, 0.87);
+    /* Default header text color */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    /* Material UI-like padding */
+    background-color: transparent;
+    /* No background color for header cells */
+}
+
+.ag-theme-alpine .ag-cell {
+    padding: 8px;
+    color: rgba(0, 0, 0, 0.87);
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 1.43;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+}
+
+.ag-theme-alpine .ag-header-cell-label {
+    font-weight: bold;
+    /* Strong/bold text */
+    text-align: center;
+}
+
+.ag-theme-alpine .ag-row {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+    /* Row bottom border */
+}
+
+.ag-theme-alpine .ag-row-hover {
+    background-color: rgba(0, 0, 0, 0.08);
+    /* Material UI hover effect */
+}
+
+.ag-theme-alpine .ag-row-even {
+    background-color: #fafafa;
+    /* Material UI even row background */
+}
+
+.ag-theme-alpine .ag-cell-focus {
+    box-shadow: none !important;
+    border: none !important;
+    /* Remove focus styling */
+}
+
+.ag-theme-alpine .ag-row-selected {
+    background-color: #e0f7fa !important;
+    /* Selected row color */
+}
